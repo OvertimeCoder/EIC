@@ -8,7 +8,7 @@ public class ModInfo {
         meta.name = EIC.NAME;
         meta.description ="Electric Industry Craft";
         meta.version =EIC.VERSION ;
-        meta.updateJSON="";
+        meta.updateJSON="https://raw.githubusercontent.com/OvertimeCoder/EIC/main/version/EICVersionCheck.json";
         meta.url = "https://github.com/OvertimeCoder/EIC";
         meta.authorList.add("Overtime Coder");
         meta.credits = "";
