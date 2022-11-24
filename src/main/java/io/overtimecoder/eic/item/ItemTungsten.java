@@ -8,8 +8,8 @@ public class ItemTungsten extends Item {
 
     public ItemTungsten() {
         super();
-        this.setRegistryName(EIC.MODID, "tungsten");
+        this.setRegistryName(EIC.MODID, "filament");
         this.setCreativeTab(CreativeTabs.MATERIALS);
-        this.setUnlocalizedName("tungsten");
+        this.setUnlocalizedName("filament");
     }
 }
