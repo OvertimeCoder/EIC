@@ -10,6 +10,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.event.FMLConstructionEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -29,9 +30,13 @@ public class EIC
 
     private static Logger logger;
 
+    @Mod.Metadata(MODID)
+    public static ModMetadata meta;
+
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        ModInfo.loadInfo(meta);
         logger = event.getModLog();
     }
 
